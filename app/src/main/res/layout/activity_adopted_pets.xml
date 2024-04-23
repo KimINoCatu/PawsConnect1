@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adopted_pets_activity">
+
+    <View
+        android:id="@+id/info_title_view"
+        android:layout_width="411dp"
+        android:layout_height="96dp"
+        android:background="#776B5D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/information_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pets_title_list"
+        android:fontFamily="serif"
+        android:textSize="40sp"
+        android:shadowColor="@color/black"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        app:layout_constraintBottom_toBottomOf="@+id/info_title_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/info_title_view"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/pet_avail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adopted_pets_title"
+        android:textStyle="italic"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_title_view"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pet_card"
+        android:layout_width="395dp"
+        android:layout_height="103dp"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pet_card3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_avail2"
+        app:layout_constraintVertical_bias="0.218">
+
+        <ImageView
+            android:id="@+id/pet_img2"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/husky" />
+
+        <TextView
+            android:id="@+id/pet_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160sp"
+            android:layout_marginTop="30sp"
+            android:text="@string/husky"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/adpt_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="290sp"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="#B0A695"
+            android:text="@string/info"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Riri)"
+            android:layout_marginStart="175sp"
+            android:layout_marginTop="55sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pet_card3"
+        android:layout_width="395dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="112dp"
+
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/paw_logo_icon1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_avail2"
+        app:layout_constraintVertical_bias="0.016">
+
+        <ImageView
+            android:id="@+id/pet_img3"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/persian" />
+
+        <TextView
+            android:id="@+id/pet_name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155sp"
+            android:layout_marginTop="30sp"
+            android:text="@string/persian"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/adpt_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="290sp"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="#B0A695"
+            android:text="@string/info"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Sasa)"
+            android:layout_marginStart="175sp"
+            android:layout_marginTop="55sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/paw_logo_icon1"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_pets_24" />
+
+    <TextView
+        android:id="@+id/company_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paws_connect_corp"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paw_logo_icon1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#776B5D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

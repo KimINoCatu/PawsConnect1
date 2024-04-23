@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TandC_Activity">
+
+    <TextView
+        android:id="@+id/terms_conditions"
+        android:layout_width="351dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="Terms and Conditions for Pet Adoption"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tc_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tc_text"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:text="Eligibility: By utilizing our pet adoption services, you confirm that you are of legal age to enter into a binding agreement according to the laws of your jurisdiction."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/tc_text2"
+        android:layout_width="375dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:text="Adoption Process: Our platform facilitates the process of connecting potential pet owners with animals in need of homes. Adoption approval is subject to our discretion and may include interviews, references, and other assessments."
+        app:layout_constraintBottom_toTopOf="@+id/tc_text3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_text"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/tc_text3"
+        android:layout_width="375dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="204dp"
+        android:text="Health and Care: While we strive to provide accurate information regarding the health and behavior of each animal, we cannot guarantee their future well-being. Adopters are responsible for providing appropriate veterinary care, training, and a nurturing environment for their new companion."
+        app:layout_constraintBottom_toTopOf="@+id/tc_text4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tc_text4"
+        android:layout_width="375dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="28dp"
+        android:text="Ownership and Responsibility: Upon adoption, the adopter assumes full responsibility for the pet's care and well-being. Adopters must comply with all local laws and regulations pertaining to pet ownership, including licensing and vaccination requirements."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_text"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <TextView
+        android:id="@+id/tc_text5"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:text="Liability: While we endeavor to facilitate successful adoptions, we cannot be held liable for any damages, injuries, or losses arising from the adoption or ownership of a pet obtained through our platform."
+        app:layout_constraintBottom_toTopOf="@+id/tc_text6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_text4"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/tc_text6"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="84dp"
+        android:text="Modification of Terms: We reserve the right to update or modify these terms and conditions at any time without prior notice. Users are encouraged to review these terms periodically for any changes."
+        app:layout_constraintBottom_toTopOf="@+id/tc_text7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_text4" />
+
+    <TextView
+        android:id="@+id/tc_text7"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="176dp"
+        android:text="By using our pet adoption services, you agree to adhere to these terms and conditions. If you do not agree with any part of these terms, you may not use our adoption platform."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_text4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/agreeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B0A695"
+        android:text="AGREE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_text7"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not show again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/agreeBtn"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_text7"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

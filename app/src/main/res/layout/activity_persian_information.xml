@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".persian_information_activity">
+    <View
+        android:id="@+id/info_title_view"
+        android:layout_width="411dp"
+        android:layout_height="96dp"
+        android:background="#776B5D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/information_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_information"
+        android:fontFamily="serif"
+        android:textSize="40sp"
+        android:shadowColor="@color/black"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        app:layout_constraintBottom_toBottomOf="@+id/info_title_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/info_title_view"
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pet_card"
+        android:layout_width="395dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information_title3"
+        app:layout_constraintVertical_bias="0.132">
+
+        <ImageView
+            android:id="@+id/pet_img"
+            android:layout_width="131dp"
+            android:layout_height="212dp"
+            app:srcCompat="@drawable/persian" />
+
+        <TextView
+            android:id="@+id/pet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145sp"
+            android:layout_marginTop="10sp"
+            android:text="@string/persian_cat"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/corgi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150sp"
+            android:layout_marginTop="60sp"
+            android:text="@string/name_sasa"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/corgi_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150sp"
+            android:layout_marginTop="90sp"
+            android:text="@string/age_sasa_"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150sp"
+            android:layout_marginTop="130sp"
+            android:text="@string/sasa_description"
+            android:justificationMode="inter_word"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:backgroundTint="#776B5D"
+            android:layout_marginStart="150sp"
+            android:layout_marginTop="330sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

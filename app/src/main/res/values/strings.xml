@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PawsConnect2</string>
+    <string name="adopt_a_pet">Adopt a Pet</string>
+    <string name="pets">Pets</string>
+    <string name="about_us">About Us</string>
+    <string name="paws_connect_corp">Paws Connect Corp.</string>
+    <string name="discover_your_perfect_match_in_our_pet_adoption_app_find_furry_friends_ready_for_their_forever_homes_with_ease_and_joy_join_us_today_to_start_your_heartwarming_journey">Discover your perfect match in our pet adoption app! Find furry friends ready for their forever homes with ease and joy. Join us today to start your heartwarming journey!</string>
+    <string name="pets_title_list">PETS</string>
+    <string name="pets_available">PETS AVAILABLE</string>
+    <string name="corgi">CORGI</string>
+    <string name="adopt">ADOPT</string>
+    <string name="british_cat">BRITISH CAT</string>
+    <string name="adopt_btn_txt">ADOPT</string>
+    <string name="adopted_pets">ADOPTED PETS</string>
+    <string name="husky">HUSKY</string>
+    <string name="adopted">ADOPTED</string>
+    <string name="name">Name</string>
+    <string name="personal">Personal</string>
+    <string name="age">Age</string>
+    <string name="address">Address</string>
+    <string name="submit">SUBMIT</string>
+    <string name="adopted_pets_btn">Adopted Pets</string>
+    <string name="adopted_pets_title">Adopted Pets</string>
+    <string name="persian">PERSIAN</string>
+    <string name="info">INFO</string>
+    <string name="pet_information">PET INFORMATION</string>
+    <string name="back">BACK</string>
+    <string name="riri_description">Meet Riri, the spirited Siberian Husky with captivating blue eyes and a coat as sleek as moonlit silver. His playful demeanor and boundless energy make him the perfect companion for outdoor escapades and games of fetch. With his intelligence and loyal nature, Max is not just a pet, but a cherished friend who brings joy to every moment.</string>
+    <string name="riri_age">Age: 4 years old</string>
+    <string name="name_riri">Name: Riri</string>
+    <string name="persian_cat">PERSIAN CAT</string>
+    <string name="name_sasa">Name: Sasa</string>
+    <string name="age_sasa">Age: 4 years old</string>
+    <string name="sasa_description">Meet Sasa, the Persian cat with a coat like spun silk and eyes that shimmer like precious gems. Serene and elegant, she brings a touch of luxury to every moment with her gentle purrs and regal demeanor.</string>
+    <string name="age_sasa_">Age: 2 years old</string>
+</resources>
