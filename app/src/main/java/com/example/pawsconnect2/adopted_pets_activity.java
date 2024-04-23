@@ -1,6 +1,10 @@
 package com.example.pawsconnect2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,11 +14,43 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class adopted_pets_activity extends AppCompatActivity {
 
+    public Button infoBtnH,infoBtnC;
+    public ImageButton backToHomeBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_adopted_pets);
+
+        infoBtnC = findViewById(R.id.adpt_btnC);
+        infoBtnH = findViewById(R.id.infoBtnH);
+
+        backToHomeBtn = findViewById(R.id.backToHomeBtn);
+
+        infoBtnC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(adopted_pets_activity.this , persian_information_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        infoBtnH.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(adopted_pets_activity.this , husky_information_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        backToHomeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(adopted_pets_activity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

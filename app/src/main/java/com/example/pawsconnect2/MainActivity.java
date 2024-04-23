@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         PetListBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PetsListActivity.class);
+                Intent intent = new Intent(MainActivity.this, adopted_pets_activity.class);
                 startActivity(intent);
             }
         });

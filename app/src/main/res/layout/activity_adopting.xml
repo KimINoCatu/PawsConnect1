@@ -152,7 +152,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageButton
-        android:id="@+id/backButton3"
+        android:id="@+id/backToPetListBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#B0A695"
